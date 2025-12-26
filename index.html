@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sukanya Masale IndexPage</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="Animate.css">
+
+    <!--Navbar_Mobile view-->
+    <style>
+/* Reduce mobile navbar height */
+#navbarCollapse {
+    width: 100%; /* Make collapse take full width */
+}
+
+.navbar-nav {
+    margin: 0 auto; /* Auto margins to center horizontally */
+}
+
+        .navbar-nav .nav-link:hover {
+            color: red !important; /* red hover */
+        }
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: white;
+            margin-left: 10px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .whatsapp { background-color: #25D366; }
+        .call { background-color: #0A66FF; }
+        .email { background-color: #FF4B3E; }
+        .social-icons a:hover {
+            opacity: 0.8;
+        }
+        .navbar-brand img {
+            height: 60px;
+        }
+        .navbar-nav {
+            margin: auto;
+        }
+@media (max-width: 991px) {
+        .social-icons {
+            display: none !important;
+        }
+    }
+    
+  body, html {
+  margin: 0;
+  padding: 0;
+}
+.slider-section {
+  margin-top: 0;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: calc(100vh - 56px); /* Adjust for mobile navbar */
+  }
+}
+/* Marquee*/
+@media (max-width: 768px) {
+    marquee {
+        font-size: 1rem !important;
+    }
+}
+/*View More button*/
+.btn-danger:hover {
+        background-color: #cc2915 !important;
+        transform: scale(1.05);
+    }
+    .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+.gallery-item img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item.wow {
+    border-color: #ff6600;
+    animation: border-glow 1.5s infinite alternate;
+}
+
+@keyframes border-glow {
+    0% { border-color: transparent; }
+    100% { border-color: #ff6600; }
+}
+    /* Hover effect for quick links */
+    .link-hover:hover {
+        color: #ff331d !important;
+        text-decoration: underline;
+    }
+
+    /* Button hover effect */
+    .btn-square:hover {
+        filter: brightness(85%);
+        transition: filter 0.3s ease;
+    }
+
+/* team */
+@media (max-width: 767px) {
+    .team-item {
+        margin-bottom: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Header Start -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand pt-0 pb-0 ml-2" href="#"  >
+            <img src="logo.png" alt="Sukanya Masale " style="width: 180%; height: 90px; ">
+        </a>
+
+        <!-- Mobile menu button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu items & social icons -->
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 50px;">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html" style="color: #000000;font-weight: bold;">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html" style="color: #000000;font-weight: bold;">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html" style="color: #000000;font-weight: bold;">Product</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html" style="color: #000000;font-weight: bold;">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html" style="color: #000000;font-weight: bold;">Contact</a></li>
+            </ul>
+
+            <!-- Social icons -->
+            <div class="social-icons d-flex ms-auto">
+                <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="call"><i class="fas fa-phone"></i></a>
+                <a href="#" class="email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+   <!-- Header End -->
+<!-- Header End -->
+    
+<!-- Header End -->
+<!-- Slider -->
+<!-- Slider -->
+        <section class="slider-section">
+        <div id="coverCarousel" class="carousel slide" data-bs-ride="carousel">
+            
+            
+        <section id="cover">
+        <div id="coverCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+            
+            <!-- Carousel Inner -->
+            <div class="carousel-inner">
+            <!-- Slider 1 -->
+            <div class="carousel-item active">
+                <img src="Slider1.png" class="d-block w-100" alt="Slider1">
+            </div>
+
+            <!-- Slider 2 -->
+            <div class="carousel-item">
+                <img src="Slider3 (2).png" class="d-block w-100" alt="Slider2">
+            </div>
+
+            <!-- Slider 3 -->
+            <div class="carousel-item">
+                <img src="Slider4.jpg" class="d-block w-100" alt="Slider3">
+            </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#coverCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#coverCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+</section>
+
+
+
+<!-- About Start -->
+    
+    <div class="container-fluid p-5">
+        <div class="row gx-5">
+            <div class="col-lg-5 mb-5 mb-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <div class="position-absolute top-0 start-0 animate-rotate"
+                        style="width: 160px; height: 160px;">
+                        <img class="img-fluid" src="round_img.png" alt="">
+                    </div>
+                    <img class="position-absolute w-100 h-100 rounded-circle rounded-bottom rounded-end"
+                        src="Masala1_S.jpg" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="mb-4 wow fadeIn" data-wow-delay="0.2s">
+            <h3 class="display-1 text-center mb-0" style="color: #ff331d;font-size: 45px;margin-top: 0px;"><b>About Us</b></h3> <!-- Center & color change -->
+                    
+                </div>
+                <p class="mb-4 wow fadeIn" data-wow-delay="0.3s" style="text-align: justify;">The founder of our company <b style="color: #000000;">Mrs. Diksha Pravin takalkar</b> started this business in Jan 2020. Because of the quality production the company gets its name and fame in short period of time. By identifying the needs of the people, Mrs. Diksha Pravin takalkar had started to prepare home made . In the year 2020 , started the production of various types of spices. Taste of our spices increases the number of our customers.
+
+In the year 2020 , Our Company was started in the year 2020 in Koregaon bhima with the speciality of onion garlic masala ( kanda lasun masala) with excellent Service and awesome taste .
+
+Our Robust infrastructure coupled with a talented team of technicians and best production team ensures that we manufacture food products commensurable to international standards. We are also equipped with modern and robust machinery which allow us to deliver a wide range of food products.
+</p>
+                <div class="row">
+                    <!--Stoneground-->
+                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                        <div class="bg-light rounded p-4">
+                            <img class="img-fluid bg-primary rounded-circle mb-3" src="stoneground_m.jpg" style="width: 80px; height: 80px;">
+                            <h4>Stone-ground spices</h4>
+                            <p class="mb-0">Stone-ground spices are made using traditional grinding methods where whole spices are slowly crushed between natural stone rollers. This ancient technique preserves the essential oils, rich aroma, and authentic taste of every spice — just like it was done in Indian kitchens for centuries.</p>
+                        </div>
+                    </div>
+                    <!--Quality spices-->
+                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="bg-light rounded p-4">
+                            <img class="img-fluid bg-primary rounded-circle mb-3" src="quality_m.jpg" style="width: 80px; height: 80px;">
+                            <h4>Quality Spices</h4>
+                            <p class="mb-0">At our core, we believe that quality is not just a standard — it's a promise. Every spice we source is carefully selected from the finest farms across India and beyond, ensuring only the most authentic and potent ingredients reach your kitchen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- About End -->
+ <!--Marquee-->
+        <div style="background: linear-gradient(90deg, #ff0000, #ff4d4d, #ff1a1a, #cc0000); color: white; font-size: 1.2rem; font-weight: bold; font-family: 'Poppins', sans-serif; padding: 12px 0; white-space: nowrap;">
+            <marquee behavior="scroll" direction="left" scrollamount="8">
+                🌶️ Welcome to Sukanya Masale – Taste the Tradition! 🌶️ | Quality Homemade Masalas | Fresh, Aromatic & Authentic | Spices That Tell a Story 🌶️
+            </marquee>
+      </div>
+ <!--Marquee End-->
+ <!-- Our Products  -->
+<div class="container-fluid p-5 mb-5" style="background-color: #f4f5f8;"> <!-- faint grey background -->
+    <div class="row g-5 py-5">
+        <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+            <h3 class="display-1 text-center mb-0" style="color: #ff331d; font-size: 45px; margin-top: 0px;"><b>Our Products</b></h3>
+        </div>
+        <!--Product1-->
+        <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+            <p style="text-align: justify;">
+                Our <b style="color: #000000;">Chicken Masala</b> is a premium blend 
+                of carefully roasted and ground spices, designed to bring out the best in every chicken dish. It adds a deep, 
+                rich flavor, a beautiful golden color, and an irresistible aroma to gravies, roasts, and stir-fried recipes. 
+                Perfect for those who love authentic Indian taste at home.
+            </p>
+            <p>
+                <i class="bi bi-arrow-up animate-up-down" style="font-size: 3rem;"></i>
+            </p>
+            <img class="img-fluid rounded" src="Chicken_S.png" style="height: 450px; width: 100%;">
+        </div>
+          <!--Product2-->
+        <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+            <img class="img-fluid rounded mb-3" src="Pavbhaji_S.png" style="height: 450px; width: 100%;">
+            <p>
+                <i class="bi bi-arrow-down animate-up-down" style="font-size: 3rem;"></i>
+            </p>
+            <p class="mb-0" style="text-align: justify;">
+                This tangy and spicy mix turns simple vegetables into a mouth-watering <b style="color: #000000;">PavBhaji</b> 
+                with vibrant color and flavor. Best enjoyed with buttery pav, it’s the perfect way
+                to bring the street-side experience into your kitchen.
+            </p>
+        </div>
+          <!--Product3-->
+        <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+            <p style="text-align: justify;">
+                Our <b style="color: #000000;">Hyderabad Biryani Masala</b> combines exotic spices and herbs to create the perfect 
+                balance of aroma and taste. Whether you’re making mutton, chicken, or vegetable biryani, this blend ensures 
+                a rich, flavorful, and truly unforgettable dish every time.
+            </p>
+            <p>
+                <i class="bi bi-arrow-up animate-up-down" style="font-size: 3rem;"></i>
+            </p>
+            <img class="img-fluid rounded" src="HyderabadBiryani_S.png" style="height: 450px; width: 100%;">
+        </div>
+
+        <!-- View More Button -->
+        <div class="col-12 text-center mt-5">
+            <a href="P" class="btn btn-danger btn-lg px-5 py-3" 
+               style="background-color: #ff331d; border: none; border-radius: 0px; font-size: 18px; font-weight: bold; transition: 0.3s;">
+                View More
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Our Product End -->
+
+<!-- Facts Start -->
+<div class="container-fluid bg-dark facts p-5 my-5" style="background-color: #FF331D !important;">
+    <div class="row gx-5 gy-4 py-5">
+        <!--Stat1-->
+        <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.1s">
+            <div class="d-flex">
+                <div class="rounded-circle d-flex align-items-center justify-content-center mb-3"
+                    style="width: 80px; height: 80px; background: #111111;">
+                    <i class="fa fa-calendar-check fs-4" style="color: #FFFFFF;"></i>
+                </div>
+                <div class="ps-4">
+                    <h5 class="text-white">Years of Experience</h5>
+                    <h3 class="display-5 text-secondary mb-0" data-toggle="counter-up">25</h3>
+                </div>
+            </div>
+        </div>
+          <!--Stat2-->
+        <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.5s">
+            <div class="d-flex">
+                <div class="rounded-circle d-flex align-items-center justify-content-center mb-3"
+                    style="width: 80px; height: 80px; background: #111111;">
+                    <i class="fa fa-pepper-hot fs-4" style="color: #FFFFFF;"></i>
+                </div>
+                <div class="ps-4">
+                    <h5 class="text-white">Masala Varieties</h5>
+                    <h3 class="display-5 text-secondary mb-0" data-toggle="counter-up">12</h3>
+                </div>
+            </div>
+        </div>
+          <!--Stat3-->
+        <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+            <div class="d-flex">
+                <div class="rounded-circle d-flex align-items-center justify-content-center mb-3"
+                    style="width: 80px; height: 80px; background: #111111;">
+                    <i class="fa fa-box fs-4" style="color: #FFFFFF;"></i>
+                </div>
+                <div class="ps-4">
+                    <h5 class="text-white">Products Delivered</h5>
+                    <h3 class="display-5 text-secondary mb-0" data-toggle="counter-up">100000</h3>
+                </div>
+            </div>
+        </div>
+          <!--Stat4-->
+        <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.4s">
+            <div class="d-flex">
+                <div class="rounded-circle d-flex align-items-center justify-content-center mb-3"
+                    style="width: 80px; height: 80px; background: #111111;">
+                    <i class="fa fa-certificate fs-4" style="color: #FFFFFF;"></i>
+                </div>
+                <div class="ps-4">
+                    <h5 class="text-white">Quality Certifications</h5>
+                    <h3 class="display-5 text-secondary mb-0" data-toggle="counter-up">5</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Facts End -->
+
+<!--Our Team-->
+<!-- Team Start -->
+<div class="container-fluid p-5">
+    <div class="mb-5 text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px; margin: auto;">
+        <h3 class="display-1 text-center mb-0" style="color: #ff331d; font-size: 45px; margin-top: 0px;">
+            <b>Lets meet the team</b>
+        </h3>
+    </div>
+    <div class="row g-2">
+        <!--team1-->
+      <div class="col-lg-4 col-md-6 mb-4 wow fadeIn" data-wow-delay="0.1s">
+
+            <div class="team-item position-relative">
+                <div class="position-relative overflow-hidden" style="width:250px;height:250px;margin:auto;">
+                    <img class="img-fluid" src="team1.png" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
+                    <!--Icons-->
+                    <div class="team-overlay">
+                        <div class="d-none d-lg-flex align-items-center py-2">
+                            <a class="btn btn-success btn-square rounded-circle ms-2"
+                               href="https://wa.me/919923196887" target="_blank"
+                               style="background-color:#25D366;">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a class="btn btn-success btn-square rounded-circle ms-2"
+                               href="tel:+919923196887"
+                               style="background-color:#0d6efd;">
+                                <i class="fas fa-phone-alt"></i>
+                            </a>
+                            <a class="btn btn-danger btn-square rounded-circle ms-2"
+                               href="mailto:sukanyamasale77@gmail.com"
+                               style="background-color: #EA4335;">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-absolute start-50 translate-middle-x"
+                     style="bottom: -40px; width:250px; background: rgba(34,36,41,.9); padding:10px 0;">
+                    <h5 class="text-light mb-1" style="text-align: center;">Mrs.XYZ</h5>
+                    <p class="small text-uppercase text-secondary m-0"
+                       style="letter-spacing: 3px;text-align: center;">Team 1</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Owner-->
+        <div class="col-lg-4 col-md-6 mb-4 wow fadeIn" data-wow-delay="0.1s">
+
+            <div class="team-item position-relative">
+                <div class="position-relative overflow-hidden" style="width:250px;height:250px;margin:auto;">
+                    <img class="img-fluid" src="owner.png" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
+                    <!--Icons-->
+                    <div class="team-overlay">
+                        <div class="d-none d-lg-flex align-items-center py-2">
+                            <a class="btn btn-success btn-square rounded-circle ms-2"
+                               href="https://wa.me/919923196887" target="_blank"
+                               style="background-color:#25D366;">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a class="btn btn-success btn-square rounded-circle ms-2"
+                               href="tel:+919923196887"
+                               style="background-color:#0d6efd;">
+                                <i class="fas fa-phone-alt"></i>
+                            </a>
+                            <a class="btn btn-danger btn-square rounded-circle ms-2"
+                               href="mailto:sukanyamasale77@gmail.com"
+                               style="background-color: #EA4335;">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-absolute start-50 translate-middle-x"
+                     style="bottom: -40px; width:250px; background: rgba(34,36,41,.9); padding:10px 0;">
+                    <h5 class="text-light mb-1"
+                        style="font-size: 16px; line-height: 1.2;text-align: center;">
+                        Mrs. Diksha Pravin Takalkar
+                    </h5>
+                    <p class="small text-uppercase text-secondary m-0"
+                       style="letter-spacing: 3px; text-align: center;">Owner</p>
+                </div>
+            </div>
+        </div>
+
+        <!--team2-->
+       <div class="col-lg-4 col-md-6 mb-4 wow fadeIn" data-wow-delay="0.1s">
+
+            <div class="team-item position-relative">
+                <div class="position-relative overflow-hidden" style="width:250px;height:250px;margin:auto;">
+                    <img class="img-fluid" src="team2.png" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
+                    <!--Icons-->
+                    <div class="team-overlay">
+                        <div class="d-none d-lg-flex align-items-center py-2">
+                            <a class="btn btn-success btn-square rounded-circle ms-2"
+                               href="https://wa.me/919923196887" target="_blank"
+                               style="background-color:#25D366;">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a class="btn btn-success btn-square rounded-circle ms-2"
+                               href="tel:+919923196887"
+                               style="background-color:#0d6efd;">
+                                <i class="fas fa-phone-alt"></i>
+                            </a>
+                            <a class="btn btn-danger btn-square rounded-circle ms-2"
+                               href="mailto:sukanyamasale77@gmail.com"
+                               style="background-color: #EA4335;">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-absolute start-50 translate-middle-x"
+                     style="bottom: -40px; width:250px; background: rgba(34,36,41,.9); padding:10px 0;">
+                    <h5 class="text-light mb-1" style="text-align: center;">Mr.XYZ</h5>
+                    <p class="small text-uppercase text-secondary m-0"
+                       style="letter-spacing: 3px;text-align: center;">Team 2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+<!--/Our Team End-->
+
+
+<!-- Feature Start -->
+<div class="container-fluid feature position-relative p-5 pb-0 mt-5" style="background-color: #f7f7f7;">
+    <h3 class="display-1 text-center mb-0" style="color: #ff331d; font-size: 45px; padding: 20px;"><b>Services</b></h3>
+    <div class="row g-4">
+        <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.1s">
+            <div class="feature-item rounded text-center p-4" style="border: 5px solid rgb(52, 52, 135); background-color: white; height: 100%;">
+                <img class="img-fluid bg-white rounded-circle" src="OnionMasla_S.png" style="width: 130px; height: 130px;">
+                <h4 class="my-3">Authentic Kanda Lasun Masala</h4>
+                <p class="text-dark" style="text-align: justify;">
+                    Our masala is prepared following age-old Maharashtrian traditions, blending roasted onions, garlic, and select spices. 
+                    This gives your dishes a deep, rich, and unmistakable flavor that reminds you of home-cooked meals made by expert hands.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+            <div class="feature-item rounded text-center p-4" style="border: 5px solid rgb(52, 52, 135); background-color: white; height: 100%;">
+                <img class="img-fluid bg-white rounded-circle" src="hyegeinefood.jpg" style="width: 130px; height: 130px;">
+                <h4 class="my-3">Hygienic Processing</h4>
+                <p class="text-dark" style="text-align: justify;">
+                    Prepared in a spotlessly clean environment, our production follows strict hygiene practices to ensure 
+                    the masala is as safe as it is delicious.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.5s">
+            <div class="feature-item rounded text-center p-4" style="border: 5px solid rgb(52, 52, 135); background-color: white; height: 100%;">
+                <img class="img-fluid bg-white rounded-circle" src="100%Natural.jpg" style="width: 130px; height: 130px;">
+                <h4 class="my-3">100% Natural Ingredients</h4>
+                <p class="text-dark" style="text-align: justify;">
+                    Our masalas are made from pure, handpicked spices with no preservatives, artificial colors, or fillers. 
+                    Just authentic, healthy taste you can trust.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Feature End -->
+
+<!-- Animate.css -->
+<link rel="stylesheet" href="Animate.css">
+
+<!-- Gallery Start -->
+<div class="container py-5">
+    <div class="text-center mb-5">
+    <h3 class="display-1 text-center mb-0" style="color: #ff331d; font-size: 45px; padding: 20px;"><b>Gallery</b></h3>
+        <p class="lead">Handcrafted flavors captured in every shot</p>
+    </div>
+
+    <div class="row g-4">
+        <!-- Image 1 -->
+        <div class="col-md-4 col-sm-6 wow slideInRight" data-wow-duration="1.5s" data-wow-delay="0.1s">
+            <div class="border border-3 border-dark rounded overflow-hidden">
+                <img src="PaneerMasla_S.jpg" class="img-fluid" alt="Dish 1" style="width: 411.9px;height: 400px;">
+            </div>
+        </div>
+        <!-- Image 2 -->
+        <div class="col-md-4 col-sm-6 wow slideInRight" data-wow-duration="1.5s" data-wow-delay="0.3s">
+            <div class="border border-3 border-dark rounded overflow-hidden">
+                <img src="momos_S.jpg" class="img-fluid" alt="Dish 2" style="width: 411.9px;height: 400px;">
+            </div>
+        </div>
+        <!-- Image 3 -->
+        <div class="col-md-4 col-sm-6 wow slideInRight" data-wow-duration="1.5s" data-wow-delay="0.5s">
+            <div class="border border-3 border-dark rounded overflow-hidden">
+                <img src="Sandwhich_S.jpg" class="img-fluid" alt="Dish 3" style="width: 411.9px;height: 400px;">
+            </div>
+        </div>
+        <!-- Image 4 -->
+        <div class="col-md-4 col-sm-6 wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.7s">
+            <div class="border border-3 border-dark rounded overflow-hidden">
+                <img src="Fishfry_S.jpg" class="img-fluid" alt="Dish 4" style="width: 411.9px;height: 400px;">
+            </div>
+        </div>
+        <!-- Image 5 -->
+        <div class="col-md-4 col-sm-6 wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.9s">
+            <div class="border border-3 border-dark rounded overflow-hidden">
+                <img src="Biryani_S.jpg" class="img-fluid" alt="Dish 5" style="width: 411.9px;height: 400px;">
+            </div>
+        </div>
+        <!-- Image 6 -->
+        <div class="col-md-4 col-sm-6 wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="2s">
+            <div class="border border-3 border-dark rounded overflow-hidden">
+                <img src="ChickenMasala_S.jpg" class="img-fluid" alt="Dish 6" style="width: 411.9px;height: 400px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- View More Button -->
+        <div class="row mt-5">
+    <div class="col-12 text-center">
+        <a href="Gallery.html" 
+           class="btn btn-danger btn-lg px-5 py-3" 
+           style="background-color: #ff331d; border: none; border-radius: 0px; font-size: 18px; font-weight: bold; transition: 0.3s;">
+            View More
+        </a>
+    </div>
+</div>
+
+</div>
+<!-- Gallery End -->
+
+
+    <!-- Testimonial Start -->
+<div class="container-fluid py-5" style="background-color: #f7f7f7;">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h5 class="section-title" style="color: #ffcc00;">Testimonial</h5>
+    <h3 class="display-1 text-center mb-0" style="color: #ff331d; font-size: 45px; padding: 20px;"><b>What our customer says.</b></h3>
+        </div>
+
+        <div class="row g-4">
+            <!-- Review 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="p-4 text-center bg-white rounded shadow-sm h-100" style="border: 1px solid #eee;">
+                    <img class="img-fluid rounded-circle mb-3" src="testmonialimg_S.jpg" style="width: 80px; height: 80px;" alt="">
+                    <h5 class="text-dark mb-1">Anita Deshmukh</h5>
+                    <div style="color: #ffcc00;">★★★★☆</div>
+                    <p class="mt-3">“The Kanda Lasun Masala transformed my curries! The aroma is irresistible and tastes just like my grandmother’s recipe.”</p>
+                    <span class="small text-uppercase text-secondary">Home Chef</span>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="p-4 text-center bg-white rounded shadow-sm h-100" style="border: 1px solid #eee;">
+                    <img class="img-fluid rounded-circle mb-3" src="testmonialimg_S.jpg" style="width: 80px; height: 80px;" alt="">
+                    <h5 class="text-dark mb-1">Rohit Patil</h5>
+                    <div style="color: #ffcc00;">★★★★☆</div>
+                    <p class="mt-3">“Perfect blend of onions, garlic, and spices. My guests always ask for the recipe — but the secret is this masala!”</p>
+                    <span class="small text-uppercase text-secondary">Food Blogger</span>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="p-4 text-center bg-white rounded shadow-sm h-100" style="border: 1px solid #eee;">
+                    <img class="img-fluid rounded-circle mb-3" src="testmonialimg_S.jpg" style="width: 80px; height: 80px;" alt="">
+                    <h5 class="text-dark mb-1">Meera Kulkarni</h5>
+                    <div style="color: #ffcc00;">★★★★☆</div>
+                    <p class="mt-3">“Absolutely authentic! No artificial flavors, just pure taste and freshness in every spoon.”</p>
+                    <span class="small text-uppercase text-secondary">Restaurant Owner</span>
+                </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="p-4 text-center bg-white rounded shadow-sm h-100" style="border: 1px solid #eee;">
+                    <img class="img-fluid rounded-circle mb-3" src="testmonialimg_S.jpg" style="width: 80px; height: 80px;" alt="">
+                    <h5 class="text-dark mb-1">Vikram Joshi</h5>
+                    <div style="color: #ffcc00;">★★★★☆</div>
+                    <p class="mt-3">“This masala gives my dishes the perfect punch! Consistent quality and unmatched taste every time.”</p>
+                    <span class="small text-uppercase text-secondary">Spice Lover</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+<!-- Footer Start -->
+ <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-secondary px-5" style="margin-top: 50px;">
+            <div class="row gx-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <h3 class="text-light mb-4">Get In Touch</h3>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2" style="color: #ff331d !important;"></i>
+                                <p class="mb-0">Koregaon Bhima, Shirur, Pune-412216</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2" style="color: #ff331d !important;"></i>
+                                <p class="mb-0">sukanyamasale77@gmail.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2" style="color: #ff331d !important;"></i>
+                                <p class="mb-0">9923196887</p>
+                            </div>
+                            <div class="d-none d-lg-flex align-items-center py-2">
+                                <a class="btn btn-success btn-square rounded-circle ms-2"
+                                    href="https://wa.me/919923196887" target="_blank"
+                                    style="background-color:#25D366; border-color: #25D366;">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a class="btn btn-success btn-square rounded-circle ms-2" href="tel:+919923196887"
+                                    style="background-color:#0d6efd; border-color:#0d6efd !important;">
+                                    <i class="fas fa-phone-alt"></i>
+                                </a>
+                                <a class="btn btn-danger btn-square rounded-circle ms-2"
+                                    href="mailto:sukanyamasale77@gmail.com"
+                                    style="background-color: #EA4335; border-color: #EA4335;">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--comment-->
+                        <div class="col-md-12" style="width:200px;"></div>
+                        <!--comment close-->
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <h3 class="text-light mb-4">Quick Links</h3>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-secondary mb-2 link-hover" href="index.html"><i
+                                        class="bi bi-arrow-right text-primary me-2" style="color: #ff331d !important;"></i>Home</a>
+                                <a class="text-secondary mb-2 link-hover" href="about.html"><i
+                                        class="bi bi-arrow-right text-primary me-2" style="color: #ff331d !important;"></i>About
+                                    Us</a>
+                                <a class="text-secondary mb-2 link-hover" href="Product.html"><i
+                                        class="bi bi-arrow-right text-primary me-2"  style="color: #ff331d !important;"></i>product
+                                </a>
+                                <a class="text-secondary mb-2 link-hover" href="Gallery.html"><i
+                                        class="bi bi-arrow-right text-primary me-2" style="color: #ff331d !important;"></i>Gallery</a>
+                                <a class="text-secondary mb-2 link-hover" href="contact.html"><i
+                                        class="bi bi-arrow-right text-primary me-2" style="color: #ff331d !important;"></i>Contact
+                                    Us</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 p-5"
+                        style="background: #111111;"><br>
+                        <div style="height:200px;width:300px;margin-top:-60px;">
+                            <img src="Footerimg.png" style="height:200px;width:100%;">
+                        </div><br>
+                        <span
+                            style="color: white; font-size: 24px; font-weight: bold; text-shadow: 2px 2px 4px #000000;">
+                            जिभेवर रेंगाळणारी
+                            एकमेव चव 🌶️
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid py-4 py-lg-0 px-5" style="background: #111111;">
+            <div class="row gx-5">
+                <div class="container-fluid py-4 px-5" style="background: #111111; overflow-x: hidden;">
+                    <div class="row gx-5">
+                        <div class="col-12 text-center">
+                            <p class="text-secondary mb-0 small">
+                                &copy; <a class="text-light fw-bold text-decoration-none"
+                                    href="#">sukanyamasalewww.com</a>.
+                                All Rights Reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="py-lg-4 text-center credit">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fotter end--->
+   
+
+    <a href="#" class="btn btn-dark py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!--Hover Effect For Navbar-->
+    <script>
+  // Highlight the current page on load
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    if (window.location.pathname.endsWith(link.getAttribute('href'))) {
+      link.style.color = '#ff331d';
+      link.style.fontWeight = 'bold';
+     }
+     });
+    </script>
+    <!--Slider-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Wow.js -->
+        <script type="text/javascript" src="Wow_animate.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+</body>
+
+</html>

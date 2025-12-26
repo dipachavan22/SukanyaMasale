@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sukanyamasale-product</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+     <style>
+        /* header */
+        /* Reduce mobile navbar height */
+#navbarCollapse {
+    width: 100%; /* Make collapse take full width */
+}
+
+.navbar-nav {
+    margin: 0 auto; /* Auto margins to center horizontally */
+}
+
+        .navbar-nav .nav-link:hover {
+            color: red !important; /* red hover */
+        }
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: white;
+            margin-left: 10px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .whatsapp { background-color: #25D366; }
+        .call { background-color: #0A66FF; }
+        .email { background-color: #FF4B3E; }
+        .social-icons a:hover {
+            opacity: 0.8;
+        }
+        .navbar-brand img {
+            height: 60px;
+        }
+        .navbar-nav {
+            margin: auto;
+        }
+@media (max-width: 991px) {
+        .social-icons {
+            display: none !important;
+        }
+    }
+    
+
+        /* header end */
+        .card {
+            border: 2px solid black;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img-top {
+            height: 300px;
+            /* object-fit: cover; */
+        }
+
+        .btn-read-more {
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-read-more:hover {
+            background-color: #333;
+        }
+
+        /* Menu start */
+          .combo-img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        /* menu end */
+
+        /* product start */
+          .category-title {
+            background: linear-gradient(to right, #ef6868, #ffcccc);
+            padding: 10px 20px;
+            display: inline-block;
+            color:black;
+            font-weight: bold;
+            border-radius: 5px;
+            position: relative;
+            font-size: 18px;
+        }
+        .category-card {
+            text-align: center;
+            padding: 20px;
+        }
+        .circle-frame {
+            border: 3px solid red;
+            border-radius: 50%;
+            display: inline-block;
+            padding: 20px;
+            background-color: white;
+        }
+        .circle-frame img {
+            max-width: 120px;
+        }
+        .category-label {
+            display: inline-block;
+            background-color: red;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        /* product end */
+       /* Reduce mobile navbar height */
+#navbarCollapse {
+    width: 100%; /* Make collapse take full width */
+}
+
+.navbar-nav {
+    margin: 0 auto; /* Auto margins to center horizontally */
+}
+
+        .navbar-nav .nav-link:hover {
+            color: red !important; /* red hover */
+        }
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: white;
+            margin-left: 10px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .whatsapp { background-color: #25D366; }
+        .call { background-color: #0A66FF; }
+        .email { background-color: #FF4B3E; }
+        .social-icons a:hover {
+            opacity: 0.8;
+        }
+        .navbar-brand img {
+            height: 60px;
+        }
+        .navbar-nav {
+            margin: auto;
+        }
+/* Hover effect for quick links */
+    .link-hover:hover {
+        color: #ff331d !important;
+        text-decoration: underline;
+    }
+     .categorys-title {
+      background: linear-gradient(to right, #ef6868, #ffcccc);
+      padding: 10px 20px;
+      display: inline-block;
+      color: black;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 18px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Header Start -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand pt-0 pb-0 ml-2" href="#"  >
+            <img src="logo.png" alt="Sukanya Masale " style="width: 180%; height: 90px; ">
+        </a>
+
+        <!-- Mobile menu button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu items & social icons -->
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 50px;">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html" style="color: #000000;font-weight: bold;">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html" style="color: #000000;font-weight: bold;">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html" style="color: #000000;font-weight: bold;">Product</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html" style="color: #000000;font-weight: bold;">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html" style="color: #000000;font-weight: bold;">Contact</a></li>
+            </ul>
+
+            <!-- Social icons -->
+            <div class="social-icons d-flex ms-auto">
+                <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="call"><i class="fas fa-phone"></i></a>
+                <a href="#" class="email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+   
+<!-- Header End -->
+ <!-- Header End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid p-5 mb-5 bg-dark text-secondary" >
+        <!-- <div class="container wow fadeIn" data-wow-delay="0.1s" style="background-image: url('img/arpita/slider.png');">
+            <h1 class="display-1 text-secondary text-center mb-0">Product</h1>
+        </div> -->
+        <img src="img/arpita/slider.png" alt="" style="height: 300px; width: 90%;">
+    </div>
+    <!-- Hero End -->
+
+<div class="tab-class text-center">
+             <!-- Category Title -->
+  <div class="text-center">
+    <span class="categorys-title">OUR PRODUCTS</span>
+  </div>
+
+   <!-- Feature Start -->
+ 
+    <div class="container">
+        <div class="row g-4">
+            <!-- Repeat this block 12 times -->
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                <div class="card text-center h-100 w-100">
+                    <img src="img/arpita/chicken_A.png" class="card-img-top" alt="Classic Garam Masala">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Masala</h5>
+                        <a href="chicken.html"><button class="btn btn-read-more">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                <div class="card text-center h-100 w-100">
+                    <img src="img/arpita/matan_A.jpg" class="card-img-top" alt="Punjabi Garam Masala">
+                    <div class="card-body">
+                        <h5 class="card-title">Matan Masala</h5>
+                        <a href="matanmasala.html"><button class="btn btn-read-more">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards 3–12 -->
+            <!-- You can replace image URLs and titles as needed -->
+            <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                <div class="card text-center h-100 w-100">
+                    <img src="img/arpita/biryani.jpg" class="card-img-top" alt="Homemade Blend">
+                    <div class="card-body">
+                        <h5 class="card-title">Biryani Masala</h5>
+                        <a href="biryani.html"><button class="btn btn-read-more">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                <div class="card text-center h-100 w-100">
+                    <img src="img/arpita/fish_A.jpg" class="card-img-top" alt="Spicy Mix">
+                    <div class="card-body">
+                        <h5 class="card-title">Fish Curry Masala</h5>
+                        <a href="fishcurry.html"><button class="btn btn-read-more">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                <div class="card text-center h-100 w-100">
+                    <img src="img/arpita/kaju_A.jpg" class="card-img-top" alt="South Indian Blend">
+                    <div class="card-body">
+                        <h5 class="card-title">Kaju Curry Masala</h5>
+                        <a href="kajumasala.html"><button class="btn btn-read-more">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                <div class="card text-center h-100 w-100">
+                    <img src="img/arpita/kanda-lasun.jpg" class="card-img-top" alt="Royal Masala">
+                    <div class="card-body">
+                        <h5 class="card-title">Kanda Lasun Masala</h5>
+                        <a href="kandalasunmasala.html"><button class="btn btn-read-more">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                <div class="card text-center h-100 w-100">
+                    <img src="img/arpita/kitchen.jpg" class="card-img-top" alt="Fiery Fusion">
+                    <div class="card-body">
+                        <h5 class="card-title">kitchen king Masala</h5>
+                        <a href="kitchenKingmasala.html"><button class="btn btn-read-more">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                <div class="card text-center h-100 w-100">
+                    <img src="img/arpita/masur_A.jpg" class="card-img-top" alt="Herbal Masala">
+                    <div class="card-body">
+                        <h5 class="card-title">Masur Masala</h5>
+                        <a href="masurmasala.html"><button class="btn btn-read-more">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                <div class="card text-center h-100 w-100">
+                    <img src="img/arpita/paneer_A.jpg" class="card-img-top" alt="Tangy Twist">
+                    <div class="card-body">
+                        <h5 class="card-title">panner Masala</h5>
+                        <a href="paneer.html"><button class="btn btn-read-more">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                <div class="card text-center h-100 w-100">
+                    <img src="img/arpita/pavbhaji_A.jpg" class="card-img-top" alt="Smoky Masala">
+                    <div class="card-body">
+                        <h5 class="card-title">Pavbhaji Masala</h5>
+                        <a href="pavbhaji.html"><button class="btn btn-read-more">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                <div class="card text-center h-100 w-100">
+                    <img src="img/arpita/sambar-A.jpg" class="card-img-top" alt="Sweet & Spicy">
+                    <div class="card-body">
+                        <h5 class="card-title">Sambhar Masala</h5>
+                        <a href="sambhar.html"><button class="btn btn-read-more">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                <div class="card text-center h-100 w-100">
+                    <img src="img/arpita/garam_A.jpg" class="card-img-top" alt="Sweet & Spicy">
+                    <div class="card-body">
+                        <h5 class="card-title">Garam Masala</h5>
+                        <a href="garammasala.html"><button class="btn btn-read-more">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<!-- Feature End -->
+
+</div>
+    <!-- Menu Start -->
+    <div class="container-fluid menu py-5 px-0">
+        <div class="mb-5 text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px; margin: auto;">
+            <h5 class="section-title"> Combo Offers</h5>
+            <!-- <h1 class="display-3 mb-0">Hands Craft More Than Meals</h1> -->
+        </div>
+
+        <div class="container my-5">
+    <h3 class="text-center mb-4">Pick Your Combo</h3>
+    <div class="row g-4">
+        <!-- Veg Combo -->
+        <div class="col-md-6">
+            <img src="img/arpita/veg_combo.jpg" alt="Veg Combo" class="combo-img">
+        </div>
+
+        <!-- Non-Veg Combo -->
+        <div class="col-md-6">
+            <img src="img/arpita/non_vegcombo.jpg" alt="Non-Veg Combo" class="combo-img">
+        </div>
+    </div>
+</div>
+       <!-- menu end -->
+
+    
+
+   <!-- product start -->
+ <div class="container text-center my-5">
+        <!-- Title -->
+        <div class="mb-4">
+            <span class="category-title">Shop By Category</span>
+        </div>
+
+        <!-- Categories -->
+        <div class="row justify-content-center">
+            <!-- Food -->
+            <div class="col-md-3 category-card">
+                <div class="circle-frame">
+                    <img src="img/arpita/sandwich_A.jpeg" alt="Food" style="width: 120px; height: 120px;">
+                </div>
+                <a href="sandwhich.html"><div class="category-label">Sandwich Masala</div></a>
+            </div>
+            <!-- Cosmetics -->
+            <div class="col-md-3 category-card">
+                <div class="circle-frame">
+                    <img src="img/arpita/momos.jpeg" alt="Cosmetics" style="width: 120px; height: 120px;">
+                </div>
+                <a href="momos.html"><div class="category-label">Momos Masala</div></a>
+            </div>
+            <!-- Ayurvedic -->
+            <div class="col-md-3 category-card">
+                <div class="circle-frame">
+                    <img src="img/arpita/misal.jpeg" alt="Ayurvedic" style="width: 120px; height: 120px;">
+                </div>
+                <a href="misal.html"><div class="category-label">Misal Masala</div></a>
+            </div>
+            <!-- Unani -->
+            <div class="col-md-3 category-card">
+                <div class="circle-frame">
+                    <img src="img/arpita/chole.jpeg" alt="Unani" style="width: 120px; height: 120px;" >
+                </div>
+                <a href="chole.html"><div class="category-label">Chole Masala</div></a>
+            </div>
+        </div>
+    </div>
+   <!-- product end -->
+
+<!-- Footer Start -->
+        <div class="container-fluid bg-dark text-secondary px-5" style="margin-top: 50px;">
+            <div class="row gx-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <h3 class="text-light mb-4">Get In Touch</h3>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2" style="color: #ff331d !important;"></i>
+                                <p class="mb-0">Koregaon Bhima, Shirur, Pune-412216</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2" style="color: #ff331d !important;"></i>
+                                <p class="mb-0">sukanyamasale77@gmail.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2" style="color: #ff331d !important;"></i>
+                                <p class="mb-0">9923196887</p>
+                            </div>
+                            <div class="d-none d-lg-flex align-items-center py-2">
+                                <a class="btn btn-success btn-square rounded-circle ms-2"
+                                    href="https://wa.me/919923196887" target="_blank"
+                                    style="background-color:#25D366; border-color: #25D366;">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a class="btn btn-success btn-square rounded-circle ms-2" href="tel:+919923196887"
+                                    style="background-color:#0d6efd; border-color:#0d6efd !important;">
+                                    <i class="fas fa-phone-alt"></i>
+                                </a>
+                                <a class="btn btn-danger btn-square rounded-circle ms-2"
+                                    href="mailto:sukanyamasale77@gmail.com"
+                                    style="background-color: #EA4335; border-color: #EA4335;">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--comment-->
+                        <div class="col-md-12" style="width:200px;"></div>
+                        <!--comment close-->
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <h3 class="text-light mb-4">Quick Links</h3>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-secondary mb-2 link-hover" href="index.html"><i
+                                        class="bi bi-arrow-right text-primary me-2" style="color: #ff331d !important;"></i>Home</a>
+                                <a class="text-secondary mb-2 link-hover" href="about.html"><i
+                                        class="bi bi-arrow-right text-primary me-2" style="color: #ff331d !important;"></i>About
+                                    Us</a>
+                                <a class="text-secondary mb-2 link-hover" href="Product.html"><i
+                                        class="bi bi-arrow-right text-primary me-2"  style="color: #ff331d !important;"></i>product
+                                </a>
+                                <a class="text-secondary mb-2 link-hover" href="Gallery.html"><i
+                                        class="bi bi-arrow-right text-primary me-2" style="color: #ff331d !important;"></i>Gallery</a>
+                                <a class="text-secondary mb-2 link-hover" href="contact.html"><i
+                                        class="bi bi-arrow-right text-primary me-2" style="color: #ff331d !important;"></i>Contact
+                                    Us</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 p-5"
+                        style="background: #111111;"><br>
+                        <div style="height:200px;width:300px;margin-top:-60px;">
+                            <img src="Footerimg.png" style="height:200px;width:100%;">
+                        </div><br>
+                        <span
+                            style="color: white; font-size: 24px; font-weight: bold; text-shadow: 2px 2px 4px #000000;">
+                            जिभेवर रेंगाळणारी
+                            एकमेव चव 🌶️
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid py-4 py-lg-0 px-5" style="background: #111111;">
+            <div class="row gx-5">
+                <div class="container-fluid py-4 px-5" style="background: #111111; overflow-x: hidden;">
+                    <div class="row gx-5">
+                        <div class="col-12 text-center">
+                            <p class="text-secondary mb-0 small">
+                                &copy; <a class="text-light fw-bold text-decoration-none"
+                                    href="#">sukanyamasalewww.com</a>.
+                                All Rights Reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="py-lg-4 text-center credit">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fotter end--->
+         <!--fotter end--->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!--Hover Effect For Navbar-->
+    <script>
+  // Highlight the current page on load
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    if (window.location.pathname.endsWith(link.getAttribute('href'))) {
+      link.style.color = '#ff331d';
+      link.style.fontWeight = 'bold';
+     }
+     });
+    </script>
+</body>
+
+</html>

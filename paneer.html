@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Banner</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background-color: white;
+      color: rgb(244, 3, 3);
+      font-family: Arial, sans-serif;
+    }
+     
+        /* header */
+       
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover {
+            color: red !important; /* red hover */
+        }
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: white;
+            margin-left: 20px;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        .whatsapp { background-color: #25D366; }
+        .call { background-color: #0A66FF; }
+        .email { background-color: #FF4B3E; }
+        .social-icons a:hover {
+            opacity: 0.8;
+        }
+        .navbar-brand img {
+            height: 60px;
+        }
+        .navbar-nav {
+            margin: auto;
+        }
+
+        /* header end */
+    .hero-section {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-text h1 {
+      font-weight: bold;
+    }
+
+    .hero-text p {
+      color: rgba(7, 7, 7, 0.8);
+      margin-bottom: 20px;
+    }
+
+    .btn-light {
+      background-color: #56e541;
+      color: rgb(251, 6, 6);
+    }
+
+    .btn-light:hover {
+      background-color: #6a75ec;
+    }
+
+    .food-img img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .category-card {
+      border: none;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .category-title {
+      background: red;
+      color: white;
+      display: inline-block;
+      padding: 5px 15px;
+      border-radius: 20px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .cards {
+      border: 2px solid black;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+      transition: transform 0.3s ease;
+    }
+
+    .cards:hover {
+      transform: scale(1.05);
+    }
+
+    .cards-img-top {
+      height: 300px;
+      width: 90%;
+      object-fit: cover;
+    }
+
+    .btn-read-more {
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-read-more:hover {
+      background-color: #333;
+    }
+
+    .categorys-title {
+      background: linear-gradient(to right, #ef6868, #ffcccc);
+      padding: 10px 20px;
+      display: inline-block;
+      color: black;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 18px;
+      margin: 20px auto;
+      text-align: center;
+    }
+    /* Hover effect for quick links */
+        .link-hover:hover {
+            color: #ff331d !important;
+            text-decoration: underline;
+        }
+
+  </style>
+</head>
+<body>
+  <!-- header -->
+<!-- Header Start -->
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top" >
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand pt-0 pb-0 ml-2" href="#"  >
+            <img src="logo.png" alt="Sukanya Masale " style="width: 180%; height: 90px; ">
+        </a>
+
+        <!-- Mobile menu button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu items & social icons -->
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 50px;">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html" style="color: #000000;font-weight: bold;">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html" style="color: #000000;font-weight: bold;">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html" style="color: #000000;font-weight: bold;">Product</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html" style="color: #000000;font-weight: bold;">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html" style="color: #000000;font-weight: bold;">Contact</a></li>
+            </ul>
+
+            <!-- Social icons -->
+            <div class="social-icons d-flex ms-auto">
+                <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="call"><i class="fas fa-phone"></i></a>
+                <a href="#" class="email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- header end -->
+
+  <!-- Hero Section -->
+  <section class="hero-section container" style="margin-top: 100px;">
+    <div class="row align-items-center">
+      <div class="col-md-6 hero-text">
+        <h1 style="color: hsl(188.24deg 85.05% 41.96%);">Paneer Masala</h1>
+<p>A flavorful and spicy street-style Pav Bhaji Masala, perfect for casual get-togethers with friends or weekend family dinners. This Mumbai-famous dish combines a medley of mashed vegetables cooked in a rich, buttery tomato gravy, served hot with soft buttered pav buns. Quick to prepare and ready in less than an hour, it’s a delightful treat that pairs perfectly with tangy onions, lemon wedges, and fresh coriander.</p>
+        <a href="contact.html" class="btn btn-light px-4 py-2">Order Now</a>
+      </div>
+      <div class="col-md-6 food-img text-center">
+        <img src="img/arpita/paneer/paneer.jpg" alt="Paneer Masala" class="img-fluid" style="height: 400px; width: 400px;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <div class="container py-5 mt-0">
+
+    <h1 class="text-center mb-4" style="font-weight: bold;">Paneer Dishes</h1>
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="card category-card">
+          <img src="img/arpita/paneer/Butter Paneer.jpg" alt="Butter Paneer" class="img-fluid"  style="height: 354.56px;" />
+          <div class="category-title">Butter Paneer</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card category-card">
+          <img src="img/arpita/paneer/Mattar Paneer.jpg" alt="Mattar Paneer" class="img-fluid"  style="height: 354.56px;" />
+          <div class="category-title">Mattar Paneer</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card category-card">
+          <img src="img/arpita/paneer/Paneer Tikka.jpg" alt="Paneer Tikka" class="img-fluid"  style="height: 354.56px;" />
+          <div class="category-title">Paneer Tikka</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card category-card">
+          <img src="img/arpita/paneer/Shai Paneer.jpg" alt=" Shai Paneer" class="img-fluid"  style="height: 354.56px;" />
+          <div class="category-title">Shai Paneer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category Title -->
+  <div class="text-center">
+    <span class="categorys-title">Similar Products</span>
+  </div>
+
+  <!-- Product Cards -->
+  <div class="container py-5">
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-12 col-sm-6 col-lg-3 d-flex">
+        <div class="cards text-center w-100">
+          <img src="img/arpita/paneer_A.jpg" class="cards-img-top" alt="Paneer Masala" />
+          <div class="card-body">
+            <h5 class="card-title">Paneer Masala</h5>
+            <a href="Product.html"><button class="btn btn-read-more">Read More</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-12 col-sm-6 col-lg-3 d-flex">
+        <div class="cards text-center w-100">
+          <img src="img/arpita/kaju_A.jpg" class="cards-img-top" alt="Kaju Masala" />
+          <div class="card-body">
+            <h5 class="card-title">Kaju Masala</h5>
+            <a href="Product.html"><button class="btn btn-read-more">Read More</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-12 col-sm-6 col-lg-3 d-flex">
+        <div class="cards text-center w-100">
+          <img src="img/arpita/kanda-lasun.jpg" class="cards-img-top" alt="Kanda-lasun Masala" />
+          <div class="card-body">
+            <h5 class="card-title">Kanda-lasun Masala</h5>
+            <a href="Product.html"><button class="btn btn-read-more">Read More</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-12 col-sm-6 col-lg-3 d-flex">
+        <div class="cards text-center w-100">
+          <img src="img/arpita/paneer_A.jpg" class="cards-img-top" alt="Paneer Masala" />
+          <div class="card-body">
+            <h5 class="card-title">Mattar Paneer</h5>
+            <a href="Product.html"><button class="btn btn-read-more">Read More</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-secondary px-5" style="margin-top: 50px;">
+            <div class="row gx-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <h3 class="text-light mb-4">Get In Touch</h3>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2" style="color: #ff331d !important;"></i>
+                                <p class="mb-0">Koregaon Bhima, Shirur, Pune-412216</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2" style="color: #ff331d !important;"></i>
+                                <p class="mb-0">sukanyamasale77@gmail.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2" style="color: #ff331d !important;"></i>
+                                <p class="mb-0">9923196887</p>
+                            </div>
+                            <div class="d-none d-lg-flex align-items-center py-2">
+                                <a class="btn btn-success btn-square rounded-circle ms-2"
+                                    href="https://wa.me/919923196887" target="_blank"
+                                    style="background-color:#25D366; border-color: #25D366;">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a class="btn btn-success btn-square rounded-circle ms-2" href="tel:+919923196887"
+                                    style="background-color:#0d6efd; border-color:#0d6efd !important;">
+                                    <i class="fas fa-phone-alt"></i>
+                                </a>
+                                <a class="btn btn-danger btn-square rounded-circle ms-2"
+                                    href="mailto:sukanyamasale77@gmail.com"
+                                    style="background-color: #EA4335; border-color: #EA4335;">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--comment-->
+                        <div class="col-md-12" style="width:200px;"></div>
+                        <!--comment close-->
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <h3 class="text-light mb-4">Quick Links</h3>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-secondary mb-2 link-hover" href="index.html"><i
+                                        class="bi bi-arrow-right text-primary me-2" style="color: #ff331d !important;"></i>Home</a>
+                                <a class="text-secondary mb-2 link-hover" href="about.html"><i
+                                        class="bi bi-arrow-right text-primary me-2" style="color: #ff331d !important;"></i>About
+                                    Us</a>
+                                <a class="text-secondary mb-2 link-hover" href="Product.html"><i
+                                        class="bi bi-arrow-right text-primary me-2"  style="color: #ff331d !important;"></i>product
+                                </a>
+                                <a class="text-secondary mb-2 link-hover" href="Gallery.html"><i
+                                        class="bi bi-arrow-right text-primary me-2" style="color: #ff331d !important;"></i>Gallery</a>
+                                <a class="text-secondary mb-2 link-hover" href="contact.html"><i
+                                        class="bi bi-arrow-right text-primary me-2" style="color: #ff331d !important;"></i>Contact
+                                    Us</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 p-5"
+                        style="background: #111111;"><br>
+                        <div style="height:200px;width:300px;margin-top:-60px;">
+                            <img src="Footerimg.png" style="height:200px;width:100%;">
+                        </div><br>
+                        <span
+                            style="color: white; font-size: 24px; font-weight: bold; text-shadow: 2px 2px 4px #000000;">
+                            जिभेवर रेंगाळणारी
+                            एकमेव चव 🌶️
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid py-4 py-lg-0 px-5" style="background: #111111;">
+            <div class="row gx-5">
+                <div class="container-fluid py-4 px-5" style="background: #111111; overflow-x: hidden;">
+                    <div class="row gx-5">
+                        <div class="col-12 text-center">
+                            <p class="text-secondary mb-0 small">
+                                &copy; <a class="text-light fw-bold text-decoration-none"
+                                    href="#">sukanyamasalewww.com</a>.
+                                All Rights Reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="py-lg-4 text-center credit">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fotter end--->
+   
+        <!-- Back to Top -->
+    <a href="#" class="btn btn-dark py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
